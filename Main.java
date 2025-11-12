@@ -2,28 +2,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        // main class object
         Main dataMain = new Main();
-        // System.out.println("this is java code...");
-        // System.out.print("1");
-        // System.out.print(" Pravin");
-        // System.out.println(" 5295");
-
-        // Main.data("pravin");
-        //
-
-        // dataMain.cal(5);
 
         // print star pattern
-
-        // for (int i = 1; i <= 5; i++) {
-        // for (int j = 1; j <= i; j++) {
-        // System.out.print("* ");
-        // }
-        // System.out.println();
-        // }
+        dataMain.strPattern();
+        // dataMain.revStrPattern() ;
 
         // get input from user through cmd
-        dataMain.getInput();
+        // dataMain.getInput();
 
     }
 
@@ -33,13 +20,37 @@ public class Main {
         System.out.print("Enter name:- ");
         String name = scanner.nextLine();
         System.out.println("Hi! " + name);
+
+        scanner.close();
     }
 
-    // static void data(String name) {
-    // System.out.println(name);
+    void strPattern() {
+        for (int i = 1; i <= 5; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+    }
+
+    // void revStrPattern() {
+    // for (int i = 5; i >= 1; i--) {
+    // for (int j = 1; j < (5 - i); j++) {
+    // System.out.print(" ");
+    // }
+    // for (int k = 1; k <= (5 - i); k++) {
+    // System.out.print("*");
+    // }
+    // System.out.println();
+    // }
     // }
 
-    // void cal(int num) {
-    // System.out.println(num);
-    // }
+    static void data(String name) {
+        System.out.println(name);
+    }
+
+    void cal(int num) {
+        System.out.println(num);
+    }
 }
