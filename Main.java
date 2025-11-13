@@ -12,6 +12,36 @@ public class Main {
         // get input from user through cmd
         // dataMain.getInput();
 
+        dataMain.dataTypes();
+
+    }
+
+    void dataTypes() {
+        // numeric types
+        byte b = 1;
+        short sh = 12;
+        int integer = 1234;
+        long ln = 1233456789;
+
+        // float types
+        float ft = 1.5f;
+        double dbl = 2.5;
+
+        // character type
+        char ch = 'p'; // in single coats, douluo cots use for strings...
+
+        // boolear type
+        boolean isTrue = true; // ans may be True/False..
+
+        System.out.println(b);
+        System.out.println(sh);
+        System.out.println(integer);
+        System.out.println(ln);
+        System.out.println(ft);
+        System.out.println(dbl);
+        System.out.println(ch);
+        System.out.println(isTrue);
+
     }
 
     void getInput() {
