@@ -10,23 +10,25 @@ public class BankApp {
 
         System.out.print("Set Bank Opening Ledger: ");
         int ledger = scanner.nextInt();
-        bank.bankledger(ledger);
+        int getBankLedger = bank.bankledger(ledger);
 
-        System.out.println("=========================");
-        System.out.println("|        DBCC Bank       |");
-        System.out.println("=========================");
-        System.out.println("D - Deposit");
-        System.out.println("W - Withdraw");
-        System.out.println("=========================");
-        System.out.println("|Todays Ledger: " + bank.getLedger());
+        bank.homePage(getBankLedger);
 
         // int getledger = bank.bankledger();
 
         scanner.close();
     }
 
-    void withdraw() {
-
+    void homePage(int bankLedger) {
+        System.out.println("=========================");
+        System.out.println("|        DBCC Bank       |");
+        System.out.println("=========================");
+        System.out.println("W - Withdraw");
+        System.out.println("D - Deposit");
+        System.out.println("W - Withdraw");
+        System.out.println("N - New Account");
+        System.out.println("=========================");
+        System.out.println("|Todays Ledger: " + bankLedger + "|");
     }
 
     int getLedger() {
