@@ -31,9 +31,12 @@ public class BankApp {
         System.out.println("|Todays Ledger: " + bankLedger + "|");
     }
 
+    void createAccount() {
+
+    }
+
     int getLedger() {
-        // System.out.print("Ledger: ");
-        // System.out.println(this.mainLedger);
+
         return this.mainLedger;
     }
 
