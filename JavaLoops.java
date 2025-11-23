@@ -11,5 +11,17 @@ public class JavaLoops {
             System.out.println(dataCount);
             dataCount++;
         }
+
+        int i = 1;
+        do {
+            System.out.println(i);
+            i++;
+        } while (i <= 5);
+
+        String[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
+
+        for (String car : cars) {
+            System.out.println(car);
+        }
     }
 }
